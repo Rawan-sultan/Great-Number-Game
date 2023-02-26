@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Great_Number_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcom to the Great Number Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHK-xX-qPP">
+                                <rect key="frame" x="48" y="109" width="297" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i'm thinking of the number between 1 &amp; 100" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSG-WL-pIe">
+                                <rect key="frame" x="48" y="162" width="297" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a guess" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhG-hK-NRW">
+                                <rect key="frame" x="48" y="216" width="297" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sw2-tz-fTy">
+                                <rect key="frame" x="48" y="391" width="297" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                <connections>
+                                    <action selector="ButtenAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EvE-o0-TS5"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SuQ-pg-78A">
+                                <rect key="frame" x="48" y="317" width="297" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SuQ-pg-78A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="1Ys-is-qNX"/>
+                            <constraint firstItem="sw2-tz-fTy" firstAttribute="top" secondItem="SuQ-pg-78A" secondAttribute="bottom" constant="40" id="Drs-Cf-4y2"/>
+                            <constraint firstItem="KHK-xX-qPP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="NV7-ej-Raf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KhG-hK-NRW" secondAttribute="trailing" constant="48" id="O3o-eu-cQm"/>
+                            <constraint firstItem="sw2-tz-fTy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="QUS-By-mzT"/>
+                            <constraint firstItem="dSG-WL-pIe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qh8-LY-qBE"/>
+                            <constraint firstItem="KhG-hK-NRW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="X9y-KA-Wgl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KHK-xX-qPP" secondAttribute="trailing" constant="48" id="Xhr-kE-2n0"/>
+                            <constraint firstItem="SuQ-pg-78A" firstAttribute="top" secondItem="KhG-hK-NRW" secondAttribute="bottom" constant="80" id="bmu-Xe-BN3"/>
+                            <constraint firstItem="KHK-xX-qPP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="c1T-b0-b7I"/>
+                            <constraint firstItem="dSG-WL-pIe" firstAttribute="top" secondItem="KHK-xX-qPP" secondAttribute="bottom" constant="32" id="h4h-vu-LDJ"/>
+                            <constraint firstItem="KHK-xX-qPP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lPE-VT-WkN"/>
+                            <constraint firstItem="KhG-hK-NRW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mGs-Yi-HBq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sw2-tz-fTy" secondAttribute="trailing" constant="48" id="n8k-7J-jnT"/>
+                            <constraint firstItem="dSG-WL-pIe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="pNs-aD-QJd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dSG-WL-pIe" secondAttribute="trailing" constant="48" id="ppQ-Zk-1T5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SuQ-pg-78A" secondAttribute="trailing" constant="48" id="uJp-iU-UJv"/>
+                            <constraint firstItem="KhG-hK-NRW" firstAttribute="top" secondItem="dSG-WL-pIe" secondAttribute="bottom" constant="36" id="vi3-bT-h4b"/>
+                            <constraint firstItem="sw2-tz-fTy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w0j-OX-wKN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Butten" destination="sw2-tz-fTy" id="uqw-SI-VyU"/>
+                        <outlet property="TextFild" destination="SuQ-pg-78A" id="f4v-iq-TZb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
